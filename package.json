@@ -1,13 +1,13 @@
 {
   "name": "@rulecms/client",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "description": "RuleCMS client library for pulling content from RuleCMS backend.",
   "author": "RuleCMS <vishal@rulecms.com>",
   "license": "MIT",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": {
@@ -17,7 +17,8 @@
       "require": {
         "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
-      }
+      },
+      "default": "./dist/index.mjs"
     }
   },
   "files": [
