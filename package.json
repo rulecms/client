@@ -36,7 +36,13 @@
     "test:watch": "vitest",
     "typecheck": "tsc",
     "verify": "npm run typecheck && npm run test && npm run build",
-    "prepublishOnly": "npm run verify"
+    "prepublishOnly": "npm run verify",
+    "version:patch": "npm version patch",
+    "version:minor": "npm version minor",
+    "version:major": "npm version major",
+    "publish:patch": "npm run version:patch && npm publish",
+    "publish:minor": "npm run version:minor && npm publish",
+    "publish:major": "npm run version:major && npm publish"
   },
   "devDependencies": {
     "rimraf": "^6.0.1",
