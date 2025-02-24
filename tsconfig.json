@@ -6,7 +6,8 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "noEmit": true,
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals"],
+    "declaration": true
   },
   "include": ["src", "tsup.config.ts", "vitest.config.ts"]
 }
