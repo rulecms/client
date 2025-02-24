@@ -7,4 +7,9 @@ export default defineConfig({
   dts: true,
   treeshake: true,
   cjsInterop: true,
+  outExtension({ format }) {
+    return {
+      js: format === 'esm' ? '.mjs' : '.js',
+    };
+  },
 });
