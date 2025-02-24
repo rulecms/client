@@ -1,5 +1,5 @@
 {
-  "name": "rulecms",
+  "name": "@rulecms/client",
   "version": "0.0.0",
   "description": "RuleCMS client library for pulling content from RuleCMS backend.",
   "author": "RuleCMS <vishal@rulecms.com>",
