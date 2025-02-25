@@ -28,6 +28,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "dependencies": {
+    "cross-fetch": "^4.0.0"
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
