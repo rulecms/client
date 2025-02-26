@@ -1,4 +1,4 @@
-import { getApiKey } from "../../client";
+import { getApiKey } from "../../api-key-utilities/src/api-key-utilities";
 import fetch from "cross-fetch";
 
 interface ConfigurationResponse {
