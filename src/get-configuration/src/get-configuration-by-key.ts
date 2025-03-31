@@ -1,5 +1,4 @@
 import { getApiKey } from "../../api-key-utilities/src/api-key-utilities";
-import fetch from "cross-fetch";
 
 interface ConfigurationResponse {
   value: any;
@@ -10,11 +9,16 @@ interface ConfigurationResponse {
  * Fetches configuration value by key from the API
  * @param key The configuration key to fetch
  * @returns Promise that resolves to the configuration value
- * @throws Error if client is not initialized with API key
+ * @throws Error if client is not initialized with API key or if not running in browser environment
  */
 export async function getConfigurationByKey(
   key: string
 ): Promise<ConfigurationResponse> {
+  // Check if running in browser environment
+  if (typeof window === 'undefined') {
+    throw new Error('This function can only be used in a browser environment');
+  }
+
   const baseUrl = "https://rulecms.com/api";
 
   try {
